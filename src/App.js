@@ -2,8 +2,8 @@ import React from 'react';
 
 const App = () => {
     const accordionData = {
-        title: `I\'m an egg`,
-        content: `and you\'re an egg too!`
+        title: `I'm an egg`,
+        content: `and you're an egg too!`
     };
 
     const { title, content } = accordionData;
