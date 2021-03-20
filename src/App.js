@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 const App = () => {
     const accordionData = {
@@ -9,7 +10,7 @@ const App = () => {
     const { title, content } = accordionData;
 
     return (
-        <>
+        <div className="container">
             <h1>React Accordion Example</h1>
             <div className="accordion">
                 <div className="accordion-item">
@@ -22,7 +23,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
