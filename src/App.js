@@ -1,27 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
+import Accordion from './Accordion';
 
 const App = () => {
-    const accordionData = {
-        title: `I'm an egg`,
-        content: `and you're an egg too!`
-    };
+
+
+    const accordionData = [
+        {
+            title: `TITLE`,
+            content: `and you're an egg too!`
+        },
+        {
+            title: 'TITLE 2',
+            content: 'maybe we\'re both eggs'
+        },
+        {
+            title: 'title 3',
+            content: 'definitely the second option'
+        }
+    ];
 
     const { title, content } = accordionData;
 
+
     return (
         <div className="container">
-            <h1>React Accordion Example</h1>
+            <h1>React Accordion Menu Example</h1>
             <div className="accordion">
-                <div className="accordion-item">
-                    <div className="accordion-title">
-                        <div>{title}</div>
-                        <div>+</div>
-                    </div>
-                    <div className="accordion-content">
-                        {content}
-                    </div>
-                </div>
+                {accordionData.map(({ title, content }) => (
+                    <Accordion title={title} content={content} />)
+                )}
             </div>
         </div>
     );

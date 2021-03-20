@@ -1,0 +1,38 @@
+.container {
+    background: slateblue;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion {
+    margin: 20px 0;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.accordion-item::hover {
+    background-color: blueviolet;
+}
+
+.accordion-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    flex: 1;
+    border: 2px solid white;
+}
+
+.accordion-content {
+    padding: 10px;
+    flex: 1;
+    border: 2px solid white;
+}
